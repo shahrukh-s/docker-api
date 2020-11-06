@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: cd node-app && docker build . --file Dockerfile --tag shahrukhs/dockerapi:${GITHUB_RUN_NUMBER} && docker build . --file Dockerfile --tag shahrukhs/dockerapi:latest
+      run: docker build . --file Dockerfile --tag shahrukhs/dockerapi:${GITHUB_RUN_NUMBER} && docker build . --file Dockerfile --tag shahrukhs/dockerapi:latest
     - name: Push
       run: |
         docker login -u shahrukhs -p "${DOCKER_REGISTRY_TOKEN}"
