@@ -28,7 +28,7 @@ docker run -it --rm -p 8000:8000 -v /var/run/docker.sock:/var/run/docker.sock do
 ```
 
 ##Step4:
-For Accessing default page use below URL:
+For Accessing default page use below URL in CLI OR Chrome:
 
 ```shell
 Curl localhost:8000
@@ -39,9 +39,9 @@ Curl localhost:8000
 
 
 ##Create Container Output
-![Preview](https://raw.githubusercontent.com/shahrukh-s/docker-api/master/create container.png.png)
+![Preview](https://raw.githubusercontent.com/shahrukh-s/docker-api/master/create_container.png.png)
 
 
 ##Delete Container Output
-![Preview](https://raw.githubusercontent.com/shahrukh-s/docker-api/master/delete conatiner.png)
+![Preview](https://raw.githubusercontent.com/shahrukh-s/docker-api/master/delete_conatiner.png)
 
