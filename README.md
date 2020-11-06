@@ -40,7 +40,7 @@ Create/Delete Container instruction given in the Default page.
 
 
 ##Create Container Output
-![Preview](https://raw.githubusercontent.com/shahrukh-s/docker-api/main/createpng)
+![Preview](https://raw.githubusercontent.com/shahrukh-s/docker-api/main/create.png)
 
 
 ##Delete Container Output
