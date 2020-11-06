@@ -36,13 +36,13 @@ Curl localhost:8000
 
 Create/Delete Container instruction given in the Default page.
 ##Default Page Output
-![Preview](https://raw.githubusercontent.com/shahrukh-s/docker-api/master/default.png)
+![Preview](https://raw.githubusercontent.com/shahrukh-s/docker-api/main/default.png)
 
 
 ##Create Container Output
-![Preview](https://raw.githubusercontent.com/shahrukh-s/docker-api/master/create_container.png.png)
+![Preview](https://raw.githubusercontent.com/shahrukh-s/docker-api/main/createpng)
 
 
 ##Delete Container Output
-![Preview](https://raw.githubusercontent.com/shahrukh-s/docker-api/master/delete_conatiner.png)
+![Preview](https://raw.githubusercontent.com/shahrukh-s/docker-api/main/delete.png)
 
