@@ -34,6 +34,7 @@ For Accessing default page use below URL in CLI OR Chrome:
 Curl localhost:8000
 ```
 
+Create/Delete Container instruction given in the Default page.
 ##Default Page Output
 ![Preview](https://raw.githubusercontent.com/shahrukh-s/docker-api/master/default.png)
 
