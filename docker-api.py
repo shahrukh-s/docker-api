@@ -6,10 +6,10 @@ app = Flask(__name__)
 @app.route('/', methods=['get'])
 def default_page():
     return """
-    <h1>For run the conatiner use below URL and modify the values </h1>
+    <h1>For run the container use below URL and modify the values </h1>
     <h2>localhost:8000/run?image=mysql&version=8&hport=1234&cport=3306&cport=&db_user=admin&db_pass=mypass</h2>
     <h1>For delete the container use below URL and use correct containerid</h1>
-    <h2>localhost:8000/delete?id=ConatinerID</h2>
+    <h2>localhost:8000/delete?id=ContainerID</h2>
     """
 
 
@@ -38,7 +38,7 @@ def delete():
     delete = client.containers.get(ID)
     delete.kill()
     delete.remove()
-    return """<h1>Conatiner ID is deleted!</h1>"""
+    return """<h1>Container ID is deleted!</h1>"""
 
 
 if __name__ == '__main__':
