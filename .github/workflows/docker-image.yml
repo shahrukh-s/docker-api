@@ -1,0 +1,25 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      run: cd node-app && docker build . --file Dockerfile --tag shahrukhs/dockerapi:${GITHUB_RUN_NUMBER} && docker build . --file Dockerfile --tag shahrukhs/dockerapi:latest
+    - name: Push
+      run: |
+        docker login -u shahrukhs -p "${DOCKER_REGISTRY_TOKEN}"
+        docker push shahrukhs/dockerapi:${GITHUB_RUN_NUMBER}
+        docker push shahrukhs/dockerapi:latest
+      env:
+        DOCKER_REGISTRY_TOKEN: ${{ secrets.DOCKER_REGISTRY_TOKEN }}
