@@ -7,7 +7,7 @@ Prerequisites:
 
 
 ##Step1:
-Clone the project and go to docker-api directory
+Clone the project and go to docker-api directory else use Github Action genrated docker image https://hub.docker.com/r/shahrukhs/dockerapi
 
 ```shell
 git clone https://github.com/shahrukh-s/docker-api.git
